@@ -1,0 +1,160 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.brand-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.brand-tagline {
+  font-size: 1.2rem;
+  color: #a0526d;
+  margin-top: 10px;
+}
+
+/* Galeri */
+.gallery-section {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2rem;
+  color: #d07098;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimoni */
+.testimonial-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonial-section h2 {
+  font-size: 2rem;
+  color: #d07098;
+  margin-bottom: 20px;
+}
+
+.testimonial video {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 12px rgba(208, 112, 152, 0.3);
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Kontak */
+.contact-section {
+  background: #ffe6f0;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  animation: fadeInUp 1s ease-in;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #b03f6f;
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  list-style: none;
+  text-align: center;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.contact-list a {
+  color: #b03f6f;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+}
+
+/* Animasi */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
